@@ -107,4 +107,4 @@ tensorflow_1_3:
 tensorflow_1_4: 1
 
 # Question 5 (/2): What is the smallest number of neurons you can use in a layer in the network with the largest number of layers and still get the desired loss on the training set?
-tensorflow_1_5: 5
+tensorflow_1_5: 4
