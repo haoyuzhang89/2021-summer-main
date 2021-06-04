@@ -56,33 +56,31 @@ project_1_4:
 # ------------------------------------------------------------------
 
 # Question 2a (/1): Closest word to bank?
-embeddings_a_2a: your answer
+embeddings_a_2a: banks
 
 # Question 2b (/1): Closest word to plane?
-embeddings_a_2b: your answer
+embeddings_a_2b: airplane
 
 # Question 2c (/1): Closest word to flies?
-embeddings_a_2c: your answer
+embeddings_a_2c: file
 
 # Question 2d (/3): Are the neighbors dominated by one sense of flies or is there evidence that the vector encodes the meaning of other senses as well?
 # (This question is multiple choice.  Delete all but the correct answer).
 embeddings_a_2d: 
  - Dominated by one interpretation
- - Multiple interpretations
 
 # Question 3a (/1): Closest word to orange?
-embeddings_a_3a: your answer
+embeddings_a_3a: yellow
 
 # Question 3b (/1): Closest word to green?
-embeddings_a_3b: your answer
+embeddings_a_3b: red
 
 # Question 3c (/1): Closest word to celadon?
-embeddings_a_3c: your answer
+embeddings_a_3c: faience
 
 # Question 3e (/3): Does the vector for "celadon" appear to encode a notion of color?
 # (This question is multiple choice.  Delete all but the correct answer).
 embeddings_a_3e: 
- - Yes - related words emphasize the color interpretation
  - No - related words are similar on other dimensions
 
 
