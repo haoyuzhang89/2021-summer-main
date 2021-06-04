@@ -29,9 +29,21 @@ def find_nn_cos(v, Wv, k=10):
       ds: (k-dimensional vector of float), cosine similarity of each 
         neighbor in nns.
     """
-    pass
-    #### YOUR CODE HERE ####
 
+    #### YOUR CODE HERE ####
+    
+    # v (100,) Wv (400003, 100)
+    num = np.dot(Wv, v) #(400003,)
+    
+    v_norm = np.linalg.norm(v) #l2 norm of vector v
+    vi_norm = np.linalg.norm(Wv,axis=1)  # l2 norm of vectors vi
+    denom = v_norm * vi_norm
+    
+    sim = np.true_divide(num,denom)
+
+    top_k_index = np.argsort(-sim)[:k]
+    
+    return top_k_index, sim[top_k_index,]
 
 
     #### END(YOUR CODE) ####
