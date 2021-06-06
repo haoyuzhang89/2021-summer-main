@@ -89,22 +89,22 @@ embeddings_a_3e:
 # ------------------------------------------------------------------
 
 # Question 2a (/1): mouse to mice, dog is to ____
-embeddings_b_2a: your answer
+embeddings_b_2a: dogs
 
 # Question 2b (/1): fast to fastest, slow is to ____
-embeddings_b_2b: your answer
+embeddings_b_2b: slowest
 
 # Question 2c (/1): work to works, speak is to ____
-embeddings_b_2c: your answer
+embeddings_b_2c: speaks
 
 # Question 2d (/1): russia to moscow, greece is to ____
-embeddings_b_2d: your answer
+embeddings_b_2d: athens
 
 # Question 3a (/1): lizard to reptile, dog is to ____
-embeddings_b_3a: your answer
+embeddings_b_3a: dogs
 
 # Question 3b (/1): finger is to hand as toe is to ___
-embeddings_b_3b: your answer
+embeddings_b_3b: shoes
 
 
 

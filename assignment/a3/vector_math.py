@@ -41,9 +41,11 @@ def find_nn_cos(v, Wv, k=10):
     
     sim = np.true_divide(num,denom)
 
-    top_k_index = np.argsort(-sim)[:k]
+    nns = np.argsort(-sim)[:k]
     
-    return top_k_index, sim[top_k_index,]
+    ds = sim[nns,]
+    
+    return nns, ds
 
 
     #### END(YOUR CODE) ####
@@ -68,8 +70,11 @@ def analogy(vA, vB, vC, Wv, k=5):
       ds: (k-dimensional vector of float), cosine similarity of each 
         of the top candidate words.
     """
-    pass
     #### YOUR CODE HERE ####
-
+    vD = vC + vB - vA
+    
+    nns, ds = find_nn_cos(vD, Wv, k)
+    
+    return nns, ds
 
     #### END(YOUR CODE) ####
