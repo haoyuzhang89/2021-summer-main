@@ -204,4 +204,4 @@ convolutional_neural_networks_b_2:  Overall, the accuracy increases with more fi
 convolutional_neural_networks_b_3: They are different. 
 
 # Question 4 (/5): What was the best accuracy you achieved on the test set?  (As long as you show evidence of exploring, you'll get full points.)
-convolutional_neural_networks_b_4: 0.77759
+convolutional_neural_networks_b_4: 0.77814
