@@ -8,13 +8,22 @@
 #      course policy, while still being confident everyone has read the syllabus.
 
 # Replace the next two lines with your name.
+<<<<<<< HEAD
 last_name: Zhang
 first_name: Haoyu
+=======
+last_name: Plant
+first_name: Drew
+>>>>>>> 04e4e0678e8a4ef54f42cc10613d1d28f2065b68
 
 # Replace the next line with your Berkeley email address.
 # We use it to give you access to the grading sheet.  It *must* be @berkeley.edu.
 # See the assignment instructions on how to get one if you don't have one already!
+<<<<<<< HEAD
 email: haoyuzhang@berkeley.edu
+=======
+email: drewplant@berkeley.edu
+>>>>>>> 04e4e0678e8a4ef54f42cc10613d1d28f2065b68
 
 ## Read the following thoroughly:
 #  - syllabus/README.md
