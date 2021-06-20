@@ -21,15 +21,12 @@
 # Question 1 (/1): What is the goal of a language model?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_1_1: 
- - Translate between languages.
  - Score whether a sequence of tokens belongs to a language.
- - Model sentiment of a sentence.
 
 # Question 2 (/1): If you don't have much training data, what might happen if you increase "n" of n-grams?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_1_2: 
  - Model performance will decrease despite increased sparsity
- - Model performance will improve despite increased sparsity
 
 # Question 3 (/1): If you have lots of training data, what might happen if you increase "n" of n-grams?
 # (This question is multiple choice.  Delete all but the correct answer).
@@ -73,27 +70,20 @@ language_models_1_7: 0.00000
 # Question 1 (/3): How does your answer depend on k?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_a_1: 
- - Linearly
- - Inversely
- - Quadratically
  - It does not.
 
 # Question 2 (/2): P(q | b, a)?
-language_models_notebook_a_2: 0.00000
+language_models_notebook_a_2: 0.00050
 
 # Question 3 (/2): Which context scores the unknown word higher?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_a_3: 
- - a
  - b
- - same
 
 # Question 4 (/2): Which should be higher?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_a_4: 
  - a
- - b
- - same
 
 
 # ------------------------------------------------------------------

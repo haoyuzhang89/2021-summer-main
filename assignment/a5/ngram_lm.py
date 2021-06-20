@@ -153,6 +153,11 @@ class AddKTrigramLM(BaseLM):
 
         #### YOUR CODE HERE ####
         # Compute context counts
+        
+       
+        for context, ctr in self.counts.items(): # all w_1, w_2, sum over w'
+            self.context_totals[context] = sum(ctr.values())
+       
 
 
         #### END(YOUR CODE) ####
@@ -193,6 +198,12 @@ class AddKTrigramLM(BaseLM):
         #### YOUR CODE HERE ####
         # Hint: self.counts.get(...) and self.context_totals.get(...) may be
         # useful here. See note in dict_notes.md about how this works.
+        
+        nume = self.counts.get(context, {}).get(word, 0.0) + k  # C_abc + k
+        deno = np.maximum(self.context_totals.get(context, 0.0) + k*self.V, np.finfo(np.float32).eps)  # C_ab + k*|V|
+        #  denominator set to machine limit if it is zero
+       
+        return float(nume)/deno
 
 
 
