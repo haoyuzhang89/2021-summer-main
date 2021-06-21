@@ -36,8 +36,6 @@ language_models_1_3:
 # Question 4 (/2): A reasonable technique to handle out-of-vocabulary words?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_1_4: 
- - Replacing digits with a special token
- - Replacing rare words in the training set with a special UNK token to get estimates for what contexts these tend to appear in
  - All of the above
 
 # Question 5 (/2): Smoothing is a technique to... (hint - remember P(next_word | context) must add up to 1 across all next_word-s.
@@ -96,7 +94,7 @@ language_models_notebook_e_1b: 4.138e-8
 # Question 2 (/2): Which would you expect would perform better?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_e_2: 
- - 5-gram
+ - trigram
 
 # Question 3 (/1): Which produces more realistic sentences?
 # (This question is multiple choice.  Delete all but the correct answer).
