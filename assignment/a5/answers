@@ -31,7 +31,6 @@ language_models_1_2:
 # Question 3 (/1): If you have lots of training data, what might happen if you increase "n" of n-grams?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_1_3: 
- - Model performance will decrease despite increased sparsity
  - Model performance will improve despite increased sparsity
 
 # Question 4 (/2): A reasonable technique to handle out-of-vocabulary words?
@@ -44,15 +43,13 @@ language_models_1_4:
 # Question 5 (/2): Smoothing is a technique to... (hint - remember P(next_word | context) must add up to 1 across all next_word-s.
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_1_5: 
- - Handle sparsity issues even while increasing the amount of context considered
- - Take the probability distribution of words that appear in a context in the training set and flatten / smooth it by taking probability from very high probability words and spreading it across the rest of the vocabulary
  - All of the above
 
 # Question 6 (/4): Let C[x, y, z] be the number of times the text "x y z" appeared in the corpus.  C[the cat] = 8000, C[the cat in] = 5000, C[the cat in the] = 1000 and C[the cat in the hat] = 800.  The size of your vocabulary is 10,000.  What is P(hat | the cat in the)?
-language_models_1_6: 0.00000
+language_models_1_6: 0.80000
 
 # Question 7 (/5): Let C[x, y, z] be the number of times the text "x y z" appeared in the corpus.  C[the cat] = 8000, C[the cat in] = 5000, C[the cat in the] = 1000 and C[the cat in the hat] = 800.  The size of your vocabulary is 10,000.  What is P(hat | the cat in the) if you use "AddK smoothing" with k=5?
-language_models_1_7: 0.00000
+language_models_1_7: 0.01578
 
 
 
@@ -91,22 +88,20 @@ language_models_notebook_a_4:
 # ------------------------------------------------------------------
 
 # Question 1a (/2): What is the average number of times we see a trigram that appears at least once?
-language_models_notebook_e_1a: 0.00000
+language_models_notebook_e_1a: 1.52534
 
 # Question 1b (/2): What is the average number of times we see all trigrams (i.e. including those that appeared zero times)? Please provide exponential notation. Do not round to zero. Hint - look at the size of the vocabulary!
-language_models_notebook_e_1b: 0.00000
+language_models_notebook_e_1b: 4.138e-8
 
 # Question 2 (/2): Which would you expect would perform better?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_e_2: 
- - trigram
  - 5-gram
 
 # Question 3 (/1): Which produces more realistic sentences?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_e_3: 
  - Simple Trigram
- - AddK
 
 
 # ------------------------------------------------------------------
@@ -114,12 +109,11 @@ language_models_notebook_e_3:
 # ------------------------------------------------------------------
 
 # Question 1 (/1): What was the score of the highest scoring adjective sequence?
-language_models_notebook_f_1: 0.00000
+language_models_notebook_f_1: -51.95044
 
 # Question 2 (/1): Did it match the meme?
 # (This question is multiple choice.  Delete all but the correct answer).
 language_models_notebook_f_2: 
- - True
  - False
 
 
@@ -139,6 +133,3 @@ language_models_notebook_f_2:
 # (This question is multiple choice.  Delete all but the correct answer).
 model_performance_a_1: 
  - O(hV)
- - O(hV^2)
- - O(V)
- - Something else
