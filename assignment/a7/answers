@@ -133,7 +133,7 @@ practical_machine_learning_a_2: 0
 # Question 3 (/2): What can this cause?
 # (This question is multiple choice.  Delete all but the correct answer).
 practical_machine_learning_a_3: 
- - Layers closest to the features in the network may not update much as the product of partial derivatives is close to zero
+ - All of the above
 
 # Question 4 (/2): What can we do about this?
 # (This question is multiple choice.  Delete all but the correct answer).
